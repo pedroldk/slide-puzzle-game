@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
 import 'package:very_good_slide_puzzle/dashatar/dashatar.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
+import 'package:very_good_slide_puzzle/music_control/bloc/music_control_bloc.dart';
+import 'package:very_good_slide_puzzle/music_control/music_control.dart';
+import 'package:very_good_slide_puzzle/music_control/widget/music_control.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/simple/simple.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
@@ -56,6 +60,9 @@ class PuzzlePage extends StatelessWidget {
         ),
         BlocProvider(
           create: (_) => AudioControlBloc(),
+        ),
+        BlocProvider(
+          create: (_) => MusicControlBloc(),
         ),
       ],
       child: const PuzzleView(),
@@ -173,6 +180,13 @@ class PuzzleHeader extends StatelessWidget {
                 child: AudioControl(key: audioControlKey),
               ),
             ),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 34),
+                child: MusicControl(key: musicControlKey),
+              ),
+            )
           ],
         ),
         medium: (context, child) => Padding(
@@ -358,7 +372,15 @@ class PuzzleMenu extends StatelessWidget {
                 const Gap(44),
                 AudioControl(
                   key: audioControlKey,
-                )
+                ),
+                MusicControl(
+                  key: musicControlKey,
+                ),
+                MusicControlListener(
+                  key: const Key('music_player'),
+                  audioPlayer: AudioPlayer(),
+                  child: const Tooltip(
+                  message: 'test',),),
               ],
             );
           },
@@ -500,3 +522,9 @@ final numberOfMovesAndTilesLeftKey =
 /// Used to animate the transition of [AudioControl]
 /// when changing a theme.
 final audioControlKey = GlobalKey(debugLabel: 'audio_control');
+
+// The global key of [MusicControl].
+///
+/// Used to animate the transition of [MusicControl]
+/// when changing a theme.
+final musicControlKey = GlobalKey(debugLabel: 'music_control');

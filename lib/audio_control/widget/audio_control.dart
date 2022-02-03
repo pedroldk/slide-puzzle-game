@@ -21,32 +21,36 @@ class AudioControl extends StatelessWidget {
 
     return MouseRegion(
       cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: () => context.read<AudioControlBloc>().add(AudioToggled()),
-        child: AnimatedSwitcher(
-          duration: PuzzleThemeAnimationDuration.backgroundColorChange,
-          child: ResponsiveLayoutBuilder(
-            key: Key(audioAsset),
-            small: (_, __) => Image.asset(
-              audioAsset,
-              key: const Key('audio_control_small'),
-              width: 24,
-              height: 24,
-            ),
-            medium: (_, __) => Image.asset(
-              audioAsset,
-              key: const Key('audio_control_medium'),
-              width: 33,
-              height: 33,
-            ),
-            large: (_, __) => Image.asset(
-              audioAsset,
-              key: const Key('audio_control_large'),
-              width: 33,
-              height: 33,
+      child: Row(
+        children: [
+          GestureDetector(
+            onTap: () => context.read<AudioControlBloc>().add(AudioToggled()),
+            child: AnimatedSwitcher(
+              duration: PuzzleThemeAnimationDuration.backgroundColorChange,
+              child: ResponsiveLayoutBuilder(
+                key: Key(audioAsset),
+                small: (_, __) => Image.asset(
+                  audioAsset,
+                  key: const Key('audio_control_small'),
+                  width: 24,
+                  height: 24,
+                ),
+                medium: (_, __) => Image.asset(
+                  audioAsset,
+                  key: const Key('audio_control_medium'),
+                  width: 33,
+                  height: 33,
+                ),
+                large: (_, __) => Image.asset(
+                  audioAsset,
+                  key: const Key('audio_control_large'),
+                  width: 33,
+                  height: 33,
+                ),
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
