@@ -39,7 +39,6 @@ class PuzzlePage extends StatelessWidget {
               BlueDashatarTheme(),
               GreenDashatarTheme(),
               YellowDashatarTheme(),
-              SpaceDashatarTheme()
             ],
           ),
         ),
