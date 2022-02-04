@@ -42,7 +42,9 @@ flutter:
     - assets/images/dashatar/green/
     - assets/images/dashatar/blue/
     - assets/images/dashatar/yellow/
-    - assets/images/dashatar/space/
+    - assets/images/space/gallery/
+    - assets/images/space/success/
+    - assets/images/space/galaxy/
     - assets/audio/music/
   fonts:
     - family: GoogleSans

@@ -35,6 +35,7 @@ class _AppState extends State<App> {
     'assets/images/audio_control/simple_on.png',
     'assets/images/audio_control/simple_off.png',
     'assets/images/audio_control/dashatar_on.png',
+    'assets/images/audio_control/space_on.png',
     'assets/images/audio_control/green_dashatar_off.png',
     'assets/images/audio_control/blue_dashatar_off.png',
     'assets/images/audio_control/yellow_dashatar_off.png',
@@ -74,7 +75,7 @@ class _AppState extends State<App> {
           context,
         );
         precacheImage(
-          Image.asset('assets/images/dashatar/space/$i.png').image,
+          Image.asset('assets/images/space/galaxy/$i.png').image,
           context,
         );
       }
@@ -100,6 +101,14 @@ class _AppState extends State<App> {
       );
       precacheImage(
         Image.asset('assets/images/dashatar/success/yellow.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/gallery/galaxy.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/galaxy.png').image,
         context,
       );
       precacheImage(

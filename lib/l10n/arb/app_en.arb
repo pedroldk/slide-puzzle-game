@@ -66,6 +66,44 @@
             }
         }
     },
+        "spaceStartGame": "Start Game",
+        "@spaceStartGame": {
+            "description": "Shown before the puzzle is started"
+        },
+        "spaceGetReady": "Get ready...",
+        "@spaceStartPuzzle": {
+            "description": "Shown when the puzzle is loading"
+        },
+        "spaceRestart": "Restart",
+        "@spaceRestart": {
+            "description": "Shown after the puzzle is started and may be restarted"
+        },
+        "spaceCountdownGo": "GO!",
+        "@spaceCountdownGo": {
+            "description": "Shown when the countdown has just finished and the puzzle is about to start"
+        },
+        "spaceSuccessCompleted": "Puzzle challenge completed",
+        "@spaceSuccessCompleted": {
+            "description": "Shown as a title in the Dashatar success state"
+        },
+        "spaceSuccessWellDone": "Well done.\nCongrats!",
+        "@spaceSuccessWellDone": {
+            "description": "Shown as a subtitle in the Dashatar success state"
+        },
+        "spaceSuccessScore": "Score",
+        "@spaceSuccessScore": {
+            "description": "Shown as a score title in the Dashatar success state"
+        },
+        "spaceSuccessNumberOfMoves": "{numberOfMoves} Moves",
+        "@spaceSuccessNumberOfMoves": {
+            "description": "Shown as a number of moves in the Dashatar success state",
+            "placeholders": {
+                "numberOfMoves": {
+                    "type": "String",
+                    "example": "5"
+                }
+            }
+        },
     "puzzleTileLabelText": "Value: {value}, position: {x}, {y}",
     "@puzzleTileLabelText": {
         "description": "Semantic label for the puzzle tile",
@@ -143,5 +181,51 @@
     "dashatarSpaceDashLabelText": "Space Dash",
         "@dashatarSpaceDashLabelText": {
             "description": "Semantic label for the space Dash"
-        }
+        },
+        "spacePuzzleDurationLabelText": "{hours} hours {minutes} minutes {seconds} seconds",
+            "@spacePuzzleDurationLabelText": {
+                "description": "Semantic label for the Dashatar timer",
+                "placeholders": {
+                    "hours": {
+                        "type": "String",
+                        "example": "2"
+                    },
+                    "minutes": {
+                        "type": "String",
+                        "example": "6"
+                    },
+                    "seconds": {
+                        "type": "String",
+                        "example": "24"
+                    }
+                }
+            },
+            "spaceBlueDashLabelText": "Dumbbell Dash",
+            "@spaceBlueDashLabelText": {
+                "description": "Semantic label for the blue Dash"
+            },
+            "spaceGreenDashLabelText": "Skateboard Dash",
+            "@spaceGreenDashLabelText": {
+                "description": "Semantic label for the green Dash"
+            },
+            "spaceYellowDashLabelText": "Sandwich Dash",
+            "@spaceYellowDashLabelText": {
+                "description": "Semantic label for the yellow Dash"
+            },
+            "spaceSuccessShareYourScoreTitle": "Share your score!",
+            "@spaceSuccessShareYourScoreTitle": {
+                "description": "Shown as a share title in the Dashatar success state"
+            },
+            "spaceSuccessShareYourScoreMessage": "Share this puzzle to challenge your friends and be sure to check out the Flutter Puzzle Hack.",
+            "@spaceSuccessShareYourScoreMessage": {
+                "description": "Shown as a share message in the Dashatar success state"
+            },
+            "spaceSuccessShareText": "Just solved the #FlutterPuzzleHack! Check it out ↓",
+            "@spaceSuccessShareText": {
+                "description": "The text to share for this Flutter Puzzle challenge, shown in the Dashatar success state"
+            },
+            "spaceSpaceDashLabelText": "Space Dash",
+                "@spaceSpaceDashLabelText": {
+                    "description": "Semantic label for the space Dash"
+                }
 }

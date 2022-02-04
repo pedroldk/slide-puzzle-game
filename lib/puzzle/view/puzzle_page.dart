@@ -12,6 +12,9 @@ import 'package:very_good_slide_puzzle/music_control/music_control.dart';
 import 'package:very_good_slide_puzzle/music_control/widget/music_control.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/simple/simple.dart';
+import 'package:very_good_slide_puzzle/space/bloc/space_puzzle_bloc.dart';
+import 'package:very_good_slide_puzzle/space/bloc/space_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/space/themes/galaxy_space_theme.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
@@ -41,7 +44,20 @@ class PuzzlePage extends StatelessWidget {
           ),
         ),
         BlocProvider(
+          create: (_) => SpaceThemeBloc(
+            themes: const [
+              GalaxySpaceTheme(),
+            ],
+          ),
+        ),
+        BlocProvider(
           create: (_) => DashatarPuzzleBloc(
+            secondsToBegin: 3,
+            ticker: const Ticker(),
+          ),
+        ),
+        BlocProvider(
+          create: (_) => SpacePuzzleBloc(
             secondsToBegin: 3,
             ticker: const Ticker(),
           ),
@@ -51,6 +67,7 @@ class PuzzlePage extends StatelessWidget {
             initialThemes: [
               const SimpleTheme(),
               context.read<DashatarThemeBloc>().state.theme,
+              context.read<SpaceThemeBloc>().state.theme,
             ],
           ),
         ),
@@ -89,11 +106,20 @@ class PuzzleView extends StatelessWidget {
       body: AnimatedContainer(
         duration: PuzzleThemeAnimationDuration.backgroundColorChange,
         decoration: BoxDecoration(color: theme.backgroundColor),
-        child: BlocListener<DashatarThemeBloc, DashatarThemeState>(
-          listener: (context, state) {
+        child: MultiBlocListener(
+          listeners: [
+                BlocListener<DashatarThemeBloc, DashatarThemeState>(
+                listener: (context, state) {
             final dashatarTheme = context.read<DashatarThemeBloc>().state.theme;
             context.read<ThemeBloc>().add(ThemeUpdated(theme: dashatarTheme));
-          },
+            }),
+            BlocListener<SpaceThemeBloc, SpaceThemeState>(
+            listener: (context, state) {
+              final spaceTheme = context.read<SpaceThemeBloc>().state.theme;
+              context.read<ThemeBloc>().add(ThemeUpdated(theme: spaceTheme));
+            })
+          ]
+        ,
           child: MultiBlocProvider(
             providers: [
               BlocProvider(
