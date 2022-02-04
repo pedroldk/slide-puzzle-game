@@ -52,18 +52,21 @@ class _MusicControlListenerState extends State<MusicControlListener> {
 
   @override
   void dispose() {
-    widget.audioPlayer!.dispose();
+    if (widget.audioPlayer != null) {
+      widget.audioPlayer!.dispose();
+    }
     super.dispose();
   }
 
   void updateAudioPlayer({required String music}) {
-    if (widget.audioPlayer!.playing) {
+    if (widget.audioPlayer != null && widget.audioPlayer!.playing) {
       widget.audioPlayer!.stop();
     }
 
     if (music != 'None') {
-      widget.audioPlayer!.setAsset(music);
-      widget.audioPlayer!.play();
+      widget.audioPlayer?.setVolume(0.5);
+      widget.audioPlayer?.setAsset(music);
+      widget.audioPlayer?.play();
     }
   }
 }

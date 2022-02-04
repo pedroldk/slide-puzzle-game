@@ -27,6 +27,7 @@ class MusicControl extends StatelessWidget {
       const DropdownMenuItem(value: 'assets/audio/music/smile.mp3', child: Text('Smile')),
       const DropdownMenuItem(value: 'assets/audio/music/sunny.mp3', child: Text('Sunny')),
       const DropdownMenuItem(value: 'assets/audio/music/tenderness.mp3', child: Text('Tenderness')),
+      const DropdownMenuItem(value: 'assets/audio/music/ukelele.mp3', child: Text('Ukelele')),
     ];
 
     return MouseRegion(
