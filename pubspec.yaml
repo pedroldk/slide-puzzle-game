@@ -44,7 +44,7 @@ flutter:
     - assets/images/dashatar/yellow/
     - assets/images/space/gallery/
     - assets/images/space/success/
-    - assets/images/space/galaxy/
+    - assets/images/space/galaxy_first/
     - assets/audio/music/
   fonts:
     - family: GoogleSans

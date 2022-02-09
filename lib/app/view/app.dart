@@ -75,7 +75,7 @@ class _AppState extends State<App> {
           context,
         );
         precacheImage(
-          Image.asset('assets/images/space/galaxy/$i.png').image,
+          Image.asset('assets/images/space/galaxy_first/$i.png').image,
           context,
         );
       }
@@ -104,11 +104,11 @@ class _AppState extends State<App> {
         context,
       );
       precacheImage(
-        Image.asset('assets/images/space/gallery/galaxy.png').image,
+        Image.asset('assets/images/space/gallery/galaxy_first.png').image,
         context,
       );
       precacheImage(
-        Image.asset('assets/images/space/success/galaxy.png').image,
+        Image.asset('assets/images/space/success/galaxy_first.png').image,
         context,
       );
       precacheImage(

@@ -5,7 +5,7 @@ part of 'space_theme_bloc.dart';
 class SpaceThemeState extends Equatable {
   const SpaceThemeState({
     required this.themes,
-    this.theme = const GalaxySpaceTheme(),
+    this.theme = const GalaxyFirstSpaceTheme(),
   });
 
   /// The list of all available [SpaceTheme]s.

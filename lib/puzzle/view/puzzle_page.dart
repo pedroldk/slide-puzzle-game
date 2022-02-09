@@ -14,7 +14,7 @@ import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/simple/simple.dart';
 import 'package:very_good_slide_puzzle/space/bloc/space_puzzle_bloc.dart';
 import 'package:very_good_slide_puzzle/space/bloc/space_theme_bloc.dart';
-import 'package:very_good_slide_puzzle/space/themes/galaxy_space_theme.dart';
+import 'package:very_good_slide_puzzle/space/themes/galaxy_first_space_theme.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
@@ -45,7 +45,7 @@ class PuzzlePage extends StatelessWidget {
         BlocProvider(
           create: (_) => SpaceThemeBloc(
             themes: const [
-              GalaxySpaceTheme(),
+              GalaxyFirstSpaceTheme(),
             ],
           ),
         ),

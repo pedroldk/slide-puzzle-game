@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/space/space.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
+import 'package:very_good_slide_puzzle/space/space.dart';
 import 'package:very_good_slide_puzzle/space/themes/space_theme.dart';
 
 /// {@template galaxy_space_theme}
 /// The galaxy space puzzle theme.
 /// {@endtemplate}
-class GalaxySpaceTheme extends SpaceTheme {
+class GalaxyFirstSpaceTheme extends SpaceTheme {
   /// {@macro galaxy_space_theme}
-  const GalaxySpaceTheme() : super();
+  const GalaxyFirstSpaceTheme() : super();
 
   @override
   String semanticsLabel(BuildContext context) =>
@@ -31,18 +31,18 @@ class GalaxySpaceTheme extends SpaceTheme {
   Color get countdownColor => PuzzleColors.blue50;
 
   @override
-  String get themeAsset => 'assets/images/space/gallery/galaxy.png';
+  String get themeAsset => 'assets/images/space/gallery/galaxy_first.png';
 
   @override
-  String get successThemeAsset => 'assets/images/space/success/blue.png';
+  String get successThemeAsset => 'assets/images/space/gallery/galaxy_first.png';
 
   @override
   String get audioControlOffAsset =>
-      'assets/images/audio_control/blue_space_off.png';
+      'assets/images/audio_control/blue_dashatar_off.png';
 
   @override
-  String get audioAsset => 'assets/audio/dumbbell.mp3';
+  String get audioAsset => 'assets/audio/arcade-game.mp3';
 
   @override
-  String get dashAssetsDirectory => 'assets/images/space/galaxy';
+  String get dashAssetsDirectory => 'assets/images/space/galaxy_first';
 }
