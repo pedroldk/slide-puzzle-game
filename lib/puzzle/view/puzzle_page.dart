@@ -2,8 +2,42 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:very_good_slide_puzzle/animals/animals.dart';
+import 'package:very_good_slide_puzzle/animals/themes/cat_animals_theme.dart';
+import 'package:very_good_slide_puzzle/animals/themes/guinea_animals_theme.dart';
+import 'package:very_good_slide_puzzle/animals/themes/horse_animals_theme.dart';
+import 'package:very_good_slide_puzzle/animals/themes/penguin_animals_theme.dart';
+import 'package:very_good_slide_puzzle/animals/themes/rabbit_animals_theme.dart';
+import 'package:very_good_slide_puzzle/animals/themes/tiger_animals_theme.dart';
+import 'package:very_good_slide_puzzle/animals/themes/turtle_animals_theme.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
+import 'package:very_good_slide_puzzle/castles/bloc/castles_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/castles/castles.dart';
+import 'package:very_good_slide_puzzle/castles/themes/castle_first_castles_theme.dart';
+import 'package:very_good_slide_puzzle/castles/themes/castle_second_castles_theme.dart';
+import 'package:very_good_slide_puzzle/castles/themes/fairytale_castles_theme.dart';
+import 'package:very_good_slide_puzzle/castles/themes/heaven_castles_theme.dart';
+import 'package:very_good_slide_puzzle/castles/themes/moon_castles_theme.dart';
+import 'package:very_good_slide_puzzle/castles/themes/neuschwanstein_castles_theme.dart';
+import 'package:very_good_slide_puzzle/castles/themes/water_castles_theme.dart';
+import 'package:very_good_slide_puzzle/cities/bloc/cities_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/cities/cities.dart';
+import 'package:very_good_slide_puzzle/cities/themes/buildings_first_cities_theme.dart';
+import 'package:very_good_slide_puzzle/cities/themes/buildings_second_cities_theme.dart';
+import 'package:very_good_slide_puzzle/cities/themes/city_cities_theme.dart';
+import 'package:very_good_slide_puzzle/cities/themes/kuala_cities_theme.dart';
+import 'package:very_good_slide_puzzle/cities/themes/pedestrians_cities_theme.dart';
+import 'package:very_good_slide_puzzle/cities/themes/river_cities_theme.dart';
 import 'package:very_good_slide_puzzle/dashatar/dashatar.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/bloc/dinosaurs_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/dinosaurs.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/themes/eighth_theme.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/themes/fifth_theme.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/themes/fourth_theme.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/themes/second_theme.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/themes/seventh_theme.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/themes/sixth_theme.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/themes/third_theme.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
@@ -14,10 +48,27 @@ import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/simple/simple.dart';
 import 'package:very_good_slide_puzzle/space/bloc/space_puzzle_bloc.dart';
 import 'package:very_good_slide_puzzle/space/bloc/space_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/space/themes/constellations_first_space_theme.dart';
 import 'package:very_good_slide_puzzle/space/themes/galaxy_first_space_theme.dart';
+import 'package:very_good_slide_puzzle/space/themes/galaxy_second_space_theme.dart';
+import 'package:very_good_slide_puzzle/space/themes/galaxy_third_space_theme.dart';
+import 'package:very_good_slide_puzzle/space/themes/milkyway_space_theme.dart';
+import 'package:very_good_slide_puzzle/space/themes/moon_space_theme.dart';
+import 'package:very_good_slide_puzzle/space/themes/night_space_theme.dart';
+import 'package:very_good_slide_puzzle/space/themes/orion_space_theme.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
+import 'package:very_good_slide_puzzle/zen/bloc/bloc.dart';
+import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/zen/themes/abstract_zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/themes/beach_zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/themes/buddha_first_zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/themes/buddha_second_zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/themes/buddha_third_zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/themes/frogs_zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/themes/meditate_zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/themes/stones_zen_theme.dart';
 
 /// {@template puzzle_page}
 /// The root page of the puzzle UI.
@@ -45,12 +96,112 @@ class PuzzlePage extends StatelessWidget {
         BlocProvider(
           create: (_) => SpaceThemeBloc(
             themes: const [
+              ConstellationsFirstSpaceTheme(),
               GalaxyFirstSpaceTheme(),
+              GalaxySecondSpaceTheme(),
+              GalaxyThirdSpaceTheme(),
+              MilkywaySpaceTheme(),
+              MoonSpaceTheme(),
+              NightSpaceTheme(),
+              OrionSpaceTheme()
+            ],
+          ),
+        ),
+        BlocProvider(
+          create: (_) => AnimalsThemeBloc(
+            themes: const [
+              BirdAnimalsTheme(),
+              CatAnimalsTheme(),
+              GuineaAnimalsTheme(),
+              HorseAnimalsTheme(),
+              PenguinAnimalsTheme(),
+              RabbitAnimalsTheme(),
+              TigerAnimalsTheme(),
+              TurtleAnimalsTheme()
+            ],
+          ),
+        ),
+        BlocProvider(
+          create: (_) => CastlesThemeBloc(
+            themes: const [
+              ArchitectureCastlesTheme(),
+              CastleFirstCastlesTheme(),
+              CastleSecondCastlesTheme(),
+              FairytaleCastlesTheme(),
+              HeavenCastlesTheme(),
+              MoonCastlesTheme(),
+              NeuschwansteinCastlesTheme(),
+              WaterCastlesTheme()
+            ],
+          ),
+        ),
+        BlocProvider(
+          create: (_) => CitiesThemeBloc(
+            themes: const [
+              BuildingsFirstCitiesTheme(),
+              BuildingsSecondCitiesTheme(),
+              CityCitiesTheme(),
+              KualaCitiesTheme(),
+              ParisCitiesTheme(),
+              PedestriansCitiesTheme(),
+              RiverCitiesTheme()
+            ],
+          ),
+        ),
+        BlocProvider(
+          create: (_) => DinosaursThemeBloc(
+            themes: const [
+              FirstDinosaursTheme(),
+              SecondDinosaursTheme(),
+              ThirdDinosaursTheme(),
+              FourthDinosaursTheme(),
+              FifthDinosaursTheme(),
+              SixthDinosaursTheme(),
+              SeventhDinosaursTheme(),
+              EighthDinosaursTheme()
+            ],
+          ),
+        ),
+        BlocProvider(
+          create: (_) => ZenThemeBloc(
+            themes: const [
+              AbstractZenTheme(),
+              BeachZenTheme(),
+              BuddhaFirstZenTheme(),
+              BuddhaSecondZenTheme(),
+              BuddhaThirdZenTheme(),
+              FrogsZenTheme(),
+              MeditateZenTheme(),
+              StonesZenTheme()
             ],
           ),
         ),
         BlocProvider(
           create: (_) => DashatarPuzzleBloc(
+            secondsToBegin: 3,
+            ticker: const Ticker(),
+          ),
+        ),
+        BlocProvider(
+          create: (_) => AnimalsPuzzleBloc(
+            secondsToBegin: 3,
+            ticker: const Ticker(),
+          ),
+        ),
+        BlocProvider(
+          create: (_) => CastlesPuzzleBloc(
+            secondsToBegin: 3,
+            ticker: const Ticker(),
+          ),
+        ),
+        BlocProvider(
+          create: (_) => CitiesPuzzleBloc(
+            secondsToBegin: 3,
+            ticker: const Ticker(),
+          ),
+        ),
+        BlocProvider(
+          create: (_) => DinosaursPuzzleBloc(
             secondsToBegin: 3,
             ticker: const Ticker(),
           ),
@@ -62,11 +213,22 @@ class PuzzlePage extends StatelessWidget {
           ),
         ),
         BlocProvider(
+          create: (_) => ZenPuzzleBloc(
+            secondsToBegin: 3,
+            ticker: const Ticker(),
+          ),
+        ),
+        BlocProvider(
           create: (context) => ThemeBloc(
             initialThemes: [
               const SimpleTheme(),
               context.read<DashatarThemeBloc>().state.theme,
               context.read<SpaceThemeBloc>().state.theme,
+              context.read<AnimalsThemeBloc>().state.theme,
+              context.read<CastlesThemeBloc>().state.theme,
+              context.read<CitiesThemeBloc>().state.theme,
+              context.read<DinosaursThemeBloc>().state.theme,
+              context.read<ZenThemeBloc>().state.theme,
             ],
           ),
         ),
@@ -111,12 +273,37 @@ class PuzzleView extends StatelessWidget {
                 listener: (context, state) {
             final dashatarTheme = context.read<DashatarThemeBloc>().state.theme;
             context.read<ThemeBloc>().add(ThemeUpdated(theme: dashatarTheme));
-            }),
+            },),
             BlocListener<SpaceThemeBloc, SpaceThemeState>(
             listener: (context, state) {
               final spaceTheme = context.read<SpaceThemeBloc>().state.theme;
               context.read<ThemeBloc>().add(ThemeUpdated(theme: spaceTheme));
-            })
+            },),
+            BlocListener<AnimalsThemeBloc, AnimalsThemeState>(
+              listener: (context, state) {
+                final animalsTheme = context.read<AnimalsThemeBloc>().state.theme;
+                context.read<ThemeBloc>().add(ThemeUpdated(theme: animalsTheme));
+              },),
+            BlocListener<CastlesThemeBloc, CastlesThemeState>(
+              listener: (context, state) {
+                final castlesTheme = context.read<CastlesThemeBloc>().state.theme;
+                context.read<ThemeBloc>().add(ThemeUpdated(theme: castlesTheme));
+              },),
+            BlocListener<CitiesThemeBloc, CitiesThemeState>(
+              listener: (context, state) {
+                final citiesTheme = context.read<SpaceThemeBloc>().state.theme;
+                context.read<ThemeBloc>().add(ThemeUpdated(theme: citiesTheme));
+              },),
+            BlocListener<DinosaursThemeBloc, DinosaursThemeState>(
+              listener: (context, state) {
+                final dinosaursTheme = context.read<SpaceThemeBloc>().state.theme;
+                context.read<ThemeBloc>().add(ThemeUpdated(theme: dinosaursTheme));
+              },),
+            BlocListener<ZenThemeBloc, ZenThemeState>(
+              listener: (context, state) {
+                final zenTheme = context.read<SpaceThemeBloc>().state.theme;
+                context.read<ThemeBloc>().add(ThemeUpdated(theme: zenTheme));
+              },)
           ]
         ,
           child: MultiBlocProvider(

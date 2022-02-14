@@ -44,7 +44,64 @@ flutter:
     - assets/images/dashatar/yellow/
     - assets/images/space/gallery/
     - assets/images/space/success/
+    - assets/images/space/constellations_first/
     - assets/images/space/galaxy_first/
+    - assets/images/space/galaxy_second/
+    - assets/images/space/galaxy_third/
+    - assets/images/space/milkyway/
+    - assets/images/space/moon/
+    - assets/images/space/night/
+    - assets/images/space/orion/
+    - assets/images/animals/gallery/
+    - assets/images/animals/success/
+    - assets/images/animals/bird/
+    - assets/images/animals/cat/
+    - assets/images/animals/guinea/
+    - assets/images/animals/horse/
+    - assets/images/animals/penguin/
+    - assets/images/animals/rabbit/
+    - assets/images/animals/tiger/
+    - assets/images/animals/turtle/
+    - assets/images/castles/gallery/
+    - assets/images/castles/success/
+    - assets/images/castles/architecture/
+    - assets/images/castles/castle_first/
+    - assets/images/castles/castle_second/
+    - assets/images/castles/fairytale/
+    - assets/images/castles/heaven/
+    - assets/images/castles/moon/
+    - assets/images/castles/neuschwanstein/
+    - assets/images/castles/water/
+    - assets/images/cities/gallery/
+    - assets/images/cities/success/
+    - assets/images/cities/buildings_first/
+    - assets/images/cities/buildings_second/
+    - assets/images/cities/buildings_third/
+    - assets/images/cities/city/
+    - assets/images/cities/kuala/
+    - assets/images/cities/paris/
+    - assets/images/cities/pedestrians/
+    - assets/images/cities/river/
+    - assets/images/dinosaurs/gallery/
+    - assets/images/dinosaurs/success/
+    - assets/images/dinosaurs/dinosaur_first/
+    - assets/images/dinosaurs/dinosaur_second/
+    - assets/images/dinosaurs/dinosaur_third/
+    - assets/images/dinosaurs/dinosaur_fourth/
+    - assets/images/dinosaurs/dinosaur_fifth/
+    - assets/images/dinosaurs/dinosaur_sixth/
+    - assets/images/dinosaurs/dinosaur_seventh/
+    - assets/images/dinosaurs/dinosaur_eighth/
+    - assets/images/zen/gallery/
+    - assets/images/zen/success/
+    - assets/images/zen/abstract/
+    - assets/images/zen/beach/
+    - assets/images/zen/buddha_first/
+    - assets/images/zen/buddha_second/
+    - assets/images/zen/buddha_third/
+    - assets/images/zen/frogs/
+    - assets/images/zen/meditate/
+    - assets/images/zen/stones/
     - assets/audio/music/
   fonts:
     - family: GoogleSans

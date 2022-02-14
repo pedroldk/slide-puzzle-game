@@ -75,7 +75,35 @@ class _AppState extends State<App> {
           context,
         );
         precacheImage(
+          Image.asset('assets/images/space/constellations_first/$i.png').image,
+          context,
+        );
+        precacheImage(
           Image.asset('assets/images/space/galaxy_first/$i.png').image,
+          context,
+        );
+        precacheImage(
+          Image.asset('assets/images/space/galaxy_second/$i.png').image,
+          context,
+        );
+        precacheImage(
+          Image.asset('assets/images/space/galaxy_third/$i.png').image,
+          context,
+        );
+        precacheImage(
+          Image.asset('assets/images/space/milkyway/$i.png').image,
+          context,
+        );
+        precacheImage(
+          Image.asset('assets/images/space/moon/$i.png').image,
+          context,
+        );
+        precacheImage(
+          Image.asset('assets/images/space/night/$i.png').image,
+          context,
+        );
+        precacheImage(
+          Image.asset('assets/images/space/orion/$i.png').image,
           context,
         );
       }
@@ -104,11 +132,67 @@ class _AppState extends State<App> {
         context,
       );
       precacheImage(
+        Image.asset('assets/images/space/gallery/constellations_first.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/constellations_first.png').image,
+        context,
+      );
+      precacheImage(
         Image.asset('assets/images/space/gallery/galaxy_first.png').image,
         context,
       );
       precacheImage(
         Image.asset('assets/images/space/success/galaxy_first.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/gallery/galaxy_second.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/galaxy_second.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/gallery/galaxy_third.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/galaxy_third.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/gallery/milkyway.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/milkyway.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/gallery/moon.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/moon.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/gallery/night.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/night.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/gallery/orion.png').image,
+        context,
+      );
+      precacheImage(
+        Image.asset('assets/images/space/success/orion.png').image,
         context,
       );
       precacheImage(
