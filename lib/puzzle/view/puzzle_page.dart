@@ -38,6 +38,7 @@ import 'package:very_good_slide_puzzle/dinosaurs/themes/second_theme.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/themes/seventh_theme.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/themes/sixth_theme.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/themes/third_theme.dart';
+import 'package:very_good_slide_puzzle/helpers/music_player.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
@@ -221,7 +222,6 @@ class PuzzlePage extends StatelessWidget {
         BlocProvider(
           create: (context) => ThemeBloc(
             initialThemes: [
-              const SimpleTheme(),
               context.read<DashatarThemeBloc>().state.theme,
               context.read<SpaceThemeBloc>().state.theme,
               context.read<AnimalsThemeBloc>().state.theme,
@@ -557,7 +557,10 @@ class _PuzzleTile extends StatelessWidget {
 @visibleForTesting
 class PuzzleMenu extends StatelessWidget {
   /// {@macro puzzle_menu}
-  const PuzzleMenu({Key? key}) : super(key: key);
+  const PuzzleMenu({Key? key, MusicPlayerFactory? musicPlayerFactory}) :
+        _musicPlayerFactory = musicPlayerFactory ?? getMusicPlayer, super(key: key);
+
+  final MusicPlayerFactory _musicPlayerFactory;
 
   @override
   Widget build(BuildContext context) {
@@ -589,7 +592,7 @@ class PuzzleMenu extends StatelessWidget {
                 ),
                 MusicControlListener(
                   key: const Key('music_player'),
-                  audioPlayer: AudioPlayer(),
+                  audioPlayer: _musicPlayerFactory().audioPlayer,
                   child: const Tooltip(
                   message: '',),),
               ],

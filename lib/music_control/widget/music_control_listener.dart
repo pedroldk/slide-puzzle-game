@@ -50,16 +50,8 @@ class _MusicControlListenerState extends State<MusicControlListener> {
     );
   }
 
-  @override
-  void dispose() {
-    if (widget.audioPlayer != null) {
-      widget.audioPlayer!.dispose();
-    }
-    super.dispose();
-  }
-
   void updateAudioPlayer({required String music}) {
-    if (widget.audioPlayer != null && widget.audioPlayer!.playing) {
+    if (widget.audioPlayer != null && widget.audioPlayer!.playing && music == 'None') {
       widget.audioPlayer!.stop();
     }
 
