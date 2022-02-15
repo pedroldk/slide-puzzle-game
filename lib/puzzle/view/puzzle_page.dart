@@ -291,17 +291,17 @@ class PuzzleView extends StatelessWidget {
               },),
             BlocListener<CitiesThemeBloc, CitiesThemeState>(
               listener: (context, state) {
-                final citiesTheme = context.read<SpaceThemeBloc>().state.theme;
+                final citiesTheme = context.read<CitiesThemeBloc>().state.theme;
                 context.read<ThemeBloc>().add(ThemeUpdated(theme: citiesTheme));
               },),
             BlocListener<DinosaursThemeBloc, DinosaursThemeState>(
               listener: (context, state) {
-                final dinosaursTheme = context.read<SpaceThemeBloc>().state.theme;
+                final dinosaursTheme = context.read<DinosaursThemeBloc>().state.theme;
                 context.read<ThemeBloc>().add(ThemeUpdated(theme: dinosaursTheme));
               },),
             BlocListener<ZenThemeBloc, ZenThemeState>(
               listener: (context, state) {
-                final zenTheme = context.read<SpaceThemeBloc>().state.theme;
+                final zenTheme = context.read<ZenThemeBloc>().state.theme;
                 context.read<ThemeBloc>().add(ThemeUpdated(theme: zenTheme));
               },)
           ]
@@ -404,13 +404,12 @@ class PuzzleHeader extends StatelessWidget {
         ),
         medium: (context, child) => Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 50,
+            horizontal: 1,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
               PuzzleLogo(),
-              PuzzleMenu(),
             ],
           ),
         ),
@@ -466,7 +465,6 @@ class PuzzleSections extends StatelessWidget {
       small: (context, child) => Column(
         children: [
           theme.layoutDelegate.startSectionBuilder(state),
-          const PuzzleMenu(),
           const PuzzleBoard(),
           theme.layoutDelegate.endSectionBuilder(state),
         ],
@@ -565,7 +563,7 @@ class PuzzleMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     final themes = context.select((ThemeBloc bloc) => bloc.state.themes);
 
-    return Row(
+    return SingleChildScrollView(child: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ...List.generate(
@@ -580,7 +578,7 @@ class PuzzleMenu extends StatelessWidget {
           medium: (_, child) => child!,
           large: (_, child) => child!,
           child: (currentSize) {
-            return Row(
+            return SingleChildScrollView(child: Row(
               children: [
                 const Gap(44),
                 AudioControl(
@@ -593,13 +591,13 @@ class PuzzleMenu extends StatelessWidget {
                   key: const Key('music_player'),
                   audioPlayer: AudioPlayer(),
                   child: const Tooltip(
-                  message: 'test',),),
+                  message: '',),),
               ],
-            );
+            ),);
           },
         ),
       ],
-    );
+    ),);
   }
 }
 
@@ -627,10 +625,10 @@ class PuzzleMenuItem extends StatelessWidget {
     final isCurrentTheme = theme == currentTheme;
 
     return ResponsiveLayoutBuilder(
-      small: (_, child) => Column(
+      small: (_, child) => SingleChildScrollView(child: Column(
         children: [
           Container(
-            width: 100,
+            width: 80,
             height: 40,
             decoration: isCurrentTheme
                 ? BoxDecoration(
@@ -645,7 +643,7 @@ class PuzzleMenuItem extends StatelessWidget {
             child: child,
           ),
         ],
-      ),
+      )),
       medium: (_, child) => child!,
       large: (_, child) => child!,
       child: (currentSize) {

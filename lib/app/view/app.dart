@@ -74,38 +74,12 @@ class _AppState extends State<App> {
           Image.asset('assets/images/dashatar/yellow/$i.png').image,
           context,
         );
-        precacheImage(
-          Image.asset('assets/images/space/constellations_first/$i.png').image,
-          context,
-        );
-        precacheImage(
-          Image.asset('assets/images/space/galaxy_first/$i.png').image,
-          context,
-        );
-        precacheImage(
-          Image.asset('assets/images/space/galaxy_second/$i.png').image,
-          context,
-        );
-        precacheImage(
-          Image.asset('assets/images/space/galaxy_third/$i.png').image,
-          context,
-        );
-        precacheImage(
-          Image.asset('assets/images/space/milkyway/$i.png').image,
-          context,
-        );
-        precacheImage(
-          Image.asset('assets/images/space/moon/$i.png').image,
-          context,
-        );
-        precacheImage(
-          Image.asset('assets/images/space/night/$i.png').image,
-          context,
-        );
-        precacheImage(
-          Image.asset('assets/images/space/orion/$i.png').image,
-          context,
-        );
+        precacheAnimalsTheme('animals', i);
+        precacheCastlesTheme('castles', i);
+        precacheCitiesTheme('cities', i);
+        precacheDinosaursTheme('dinosaurs', i);
+        precacheSpaceTheme('space', i);
+        precacheZenTheme('zen', i);
       }
       precacheImage(
         Image.asset('assets/images/dashatar/gallery/green.png').image,
@@ -243,6 +217,212 @@ class _AppState extends State<App> {
         prefetchToMemory(audioAsset);
       }
     });
+  }
+
+  void precacheCitiesTheme(String themeFolder, int i) {
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/buildings_first/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/buildings_second/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/city/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/kuala/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/paris/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/pedestrians/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/river/$i.png').image,
+      context,
+    );
+  }
+
+  void precacheCastlesTheme(String themeFolder, int i) {
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/architecture/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/castle_first/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/castle_second/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/fairytale/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/heaven/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/moon/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/neuschwanstein/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/water/$i.png').image,
+      context,
+    );
+  }
+
+  void precacheDinosaursTheme(String themeFolder, int i) {
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_first/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_second/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_third/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_fourth/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_fifth/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_sixth/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_seventh/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/dinosaur_eighth/$i.png').image,
+      context,
+    );
+  }
+
+  void precacheZenTheme(String themeFolder, int i) {
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/abstract/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/beach/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/buddha_first/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/buddha_second/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/buddha_third/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/frogs/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/meditate/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/stones/$i.png').image,
+      context,
+    );
+  }
+
+  void precacheAnimalsTheme(String themeFolder, int i) {
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/bird/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/cat/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/guinea/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/horse/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/penguin/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/rabbit/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/tiger/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/turtle/$i.png').image,
+      context,
+    );
+  }
+
+  void precacheSpaceTheme(String themeFolder, int i) {
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/constellations_first/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/galaxy_first/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/galaxy_second/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/galaxy_third/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/milkyway/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/moon/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/night/$i.png').image,
+      context,
+    );
+    precacheImage(
+      Image.asset('assets/images/$themeFolder/orion/$i.png').image,
+      context,
+    );
   }
 
   /// Prefetches the given [filePath] to memory.
