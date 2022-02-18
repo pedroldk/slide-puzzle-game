@@ -18,8 +18,7 @@ abstract class AnimalsTheme extends PuzzleTheme {
   String get name => 'Animals';
 
   @override
-  String get audioControlOnAsset =>
-      'assets/images/audio_control/space_on.png';
+  String get audioControlOnAsset => 'assets/images/audio_control/space_on.png';
 
   @override
   bool get hasTimer => true;

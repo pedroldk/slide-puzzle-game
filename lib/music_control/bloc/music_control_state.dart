@@ -3,9 +3,7 @@
 part of 'music_control_bloc.dart';
 
 class MusicControlState extends Equatable {
-  const MusicControlState({
-    this.music = 'None'
-  });
+  const MusicControlState({this.music = 'None'});
 
   /// The music being played.
   final String music;

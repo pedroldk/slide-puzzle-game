@@ -32,16 +32,13 @@ class MusicControl extends StatelessWidget {
 
     return MouseRegion(
       cursor: SystemMouseCursors.click,
-      child: Row(
-        children: [
-          DropdownButton(
-            value: selectedMusic,
-            items: menuItems,
-            onChanged: (value) => context
-                .read<MusicControlBloc>()
-                .add(MusicChanged(value.toString())),
-          )
-        ],
+      child: DropdownButton(
+        style: const TextStyle(color: Colors.blue),
+        value: selectedMusic,
+        items: menuItems,
+        onChanged: (value) => context
+            .read<MusicControlBloc>()
+            .add(MusicChanged(value.toString())),
       ),
     );
   }

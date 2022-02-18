@@ -269,43 +269,61 @@ class PuzzleView extends StatelessWidget {
         decoration: BoxDecoration(color: theme.backgroundColor),
         child: MultiBlocListener(
           listeners: [
-                BlocListener<DashatarThemeBloc, DashatarThemeState>(
-                listener: (context, state) {
-            final dashatarTheme = context.read<DashatarThemeBloc>().state.theme;
-            context.read<ThemeBloc>().add(ThemeUpdated(theme: dashatarTheme));
-            },),
+            BlocListener<DashatarThemeBloc, DashatarThemeState>(
+              listener: (context, state) {
+                final dashatarTheme =
+                    context.read<DashatarThemeBloc>().state.theme;
+                context
+                    .read<ThemeBloc>()
+                    .add(ThemeUpdated(theme: dashatarTheme));
+              },
+            ),
             BlocListener<SpaceThemeBloc, SpaceThemeState>(
-            listener: (context, state) {
-              final spaceTheme = context.read<SpaceThemeBloc>().state.theme;
-              context.read<ThemeBloc>().add(ThemeUpdated(theme: spaceTheme));
-            },),
+              listener: (context, state) {
+                final spaceTheme = context.read<SpaceThemeBloc>().state.theme;
+                context.read<ThemeBloc>().add(ThemeUpdated(theme: spaceTheme));
+              },
+            ),
             BlocListener<AnimalsThemeBloc, AnimalsThemeState>(
               listener: (context, state) {
-                final animalsTheme = context.read<AnimalsThemeBloc>().state.theme;
-                context.read<ThemeBloc>().add(ThemeUpdated(theme: animalsTheme));
-              },),
+                final animalsTheme =
+                    context.read<AnimalsThemeBloc>().state.theme;
+                context
+                    .read<ThemeBloc>()
+                    .add(ThemeUpdated(theme: animalsTheme));
+              },
+            ),
             BlocListener<CastlesThemeBloc, CastlesThemeState>(
               listener: (context, state) {
-                final castlesTheme = context.read<CastlesThemeBloc>().state.theme;
-                context.read<ThemeBloc>().add(ThemeUpdated(theme: castlesTheme));
-              },),
+                final castlesTheme =
+                    context.read<CastlesThemeBloc>().state.theme;
+                context
+                    .read<ThemeBloc>()
+                    .add(ThemeUpdated(theme: castlesTheme));
+              },
+            ),
             BlocListener<CitiesThemeBloc, CitiesThemeState>(
               listener: (context, state) {
                 final citiesTheme = context.read<CitiesThemeBloc>().state.theme;
                 context.read<ThemeBloc>().add(ThemeUpdated(theme: citiesTheme));
-              },),
+              },
+            ),
             BlocListener<DinosaursThemeBloc, DinosaursThemeState>(
               listener: (context, state) {
-                final dinosaursTheme = context.read<DinosaursThemeBloc>().state.theme;
-                context.read<ThemeBloc>().add(ThemeUpdated(theme: dinosaursTheme));
-              },),
+                final dinosaursTheme =
+                    context.read<DinosaursThemeBloc>().state.theme;
+                context
+                    .read<ThemeBloc>()
+                    .add(ThemeUpdated(theme: dinosaursTheme));
+              },
+            ),
             BlocListener<ZenThemeBloc, ZenThemeState>(
               listener: (context, state) {
                 final zenTheme = context.read<ZenThemeBloc>().state.theme;
                 context.read<ThemeBloc>().add(ThemeUpdated(theme: zenTheme));
-              },)
-          ]
-        ,
+              },
+            )
+          ],
           child: MultiBlocProvider(
             providers: [
               BlocProvider(
@@ -386,6 +404,9 @@ class PuzzleHeader extends StatelessWidget {
             const Align(
               child: PuzzleLogo(),
             ),
+            const Align(
+              child: PuzzleMenu(),
+            ),
             Align(
               alignment: Alignment.centerRight,
               child: Padding(
@@ -410,6 +431,7 @@ class PuzzleHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
               PuzzleLogo(),
+              PuzzleMenu(),
             ],
           ),
         ),

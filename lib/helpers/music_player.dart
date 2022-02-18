@@ -7,12 +7,16 @@ import 'package:just_audio/just_audio.dart';
 typedef MusicPlayerFactory = ValueGetter<MusicPlayer>;
 
 /// Gets a new instance of [AudioPlayer].
-MusicPlayer getMusicPlayer() => MusicPlayer(AudioPlayer());
+MusicPlayer getMusicPlayer() => MusicPlayer();
 
 class MusicPlayer {
-  MusicPlayer(AudioPlayer audioPlayer) {
-    this.audioPlayer = audioPlayer;
+  static final MusicPlayer _singleton = MusicPlayer._internal();
+
+  factory MusicPlayer() {
+    return _singleton;
   }
 
-  AudioPlayer? audioPlayer;
+  AudioPlayer? audioPlayer = AudioPlayer();
+
+  MusicPlayer._internal();
 }
