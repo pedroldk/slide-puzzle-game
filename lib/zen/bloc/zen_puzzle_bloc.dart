@@ -10,8 +10,7 @@ part 'zen_puzzle_state.dart';
 /// {@template zen_puzzle_bloc}
 /// A bloc responsible for starting the Zen puzzle.
 /// {@endtemplate}
-class ZenPuzzleBloc
-    extends Bloc<ZenPuzzleEvent, ZenPuzzleState> {
+class ZenPuzzleBloc extends Bloc<ZenPuzzleEvent, ZenPuzzleState> {
   /// {@macro zen_puzzle_bloc}
   ZenPuzzleBloc({
     required this.secondsToBegin,

@@ -10,8 +10,7 @@ part 'castles_puzzle_state.dart';
 /// {@template castles_puzzle_bloc}
 /// A bloc responsible for starting the Castles puzzle.
 /// {@endtemplate}
-class CastlesPuzzleBloc
-    extends Bloc<CastlesPuzzleEvent, CastlesPuzzleState> {
+class CastlesPuzzleBloc extends Bloc<CastlesPuzzleEvent, CastlesPuzzleState> {
   /// {@macro castles_puzzle_bloc}
   CastlesPuzzleBloc({
     required this.secondsToBegin,

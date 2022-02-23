@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
-import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/castles/castles.dart';
+import 'package:very_good_slide_puzzle/castles/layout/castles_puzzle_layout_delegate.dart';
+import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
-import 'package:very_good_slide_puzzle/castles/layout/castles_puzzle_layout_delegate.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 
 /// {@template castles_theme}
@@ -18,8 +18,7 @@ abstract class CastlesTheme extends PuzzleTheme {
   String get name => 'Castles';
 
   @override
-  String get audioControlOnAsset =>
-      'assets/images/audio_control/space_on.png';
+  String get audioControlOnAsset => 'assets/images/audio_control/space_on.png';
 
   @override
   bool get hasTimer => true;

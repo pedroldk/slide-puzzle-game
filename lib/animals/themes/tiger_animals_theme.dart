@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:very_good_slide_puzzle/animals/animals.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
-import 'package:very_good_slide_puzzle/space/space.dart';
-import 'package:very_good_slide_puzzle/space/themes/space_theme.dart';
 
 /// {@template galaxy_space_theme}
 /// The galaxy space puzzle theme.

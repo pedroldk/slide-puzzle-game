@@ -10,8 +10,7 @@ part 'cities_puzzle_state.dart';
 /// {@template cities_puzzle_bloc}
 /// A bloc responsible for starting the Cities puzzle.
 /// {@endtemplate}
-class CitiesPuzzleBloc
-    extends Bloc<CitiesPuzzleEvent, CitiesPuzzleState> {
+class CitiesPuzzleBloc extends Bloc<CitiesPuzzleEvent, CitiesPuzzleState> {
   /// {@macro cities_puzzle_bloc}
   CitiesPuzzleBloc({
     required this.secondsToBegin,

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:very_good_slide_puzzle/zen/zen.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
+import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
 import 'package:very_good_slide_puzzle/zen/widgets/zen_puzzle_action_button.dart';
 import 'package:very_good_slide_puzzle/zen/widgets/zen_timer.dart';
-import 'package:very_good_slide_puzzle/theme/theme.dart';
+import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_start_section}
 /// Displays the start section of the puzzle based on [state].
@@ -24,8 +24,7 @@ class ZenStartSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final status =
-        context.select((ZenPuzzleBloc bloc) => bloc.state.status);
+    final status = context.select((ZenPuzzleBloc bloc) => bloc.state.status);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
-import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/animals/animals.dart';
-import 'package:very_good_slide_puzzle/helpers/helpers.dart';
-import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/animals/widgets/animals_score.dart';
 import 'package:very_good_slide_puzzle/animals/widgets/animals_share_dialog_animated_builder.dart';
 import 'package:very_good_slide_puzzle/animals/widgets/animals_share_your_score.dart';
+import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
+import 'package:very_good_slide_puzzle/colors/colors.dart';
+import 'package:very_good_slide_puzzle/helpers/helpers.dart';
+import 'package:very_good_slide_puzzle/layout/layout.dart';
 
 /// {@template animals_share_dialog}
 /// Displays a Animals share dialog with a score of the completed puzzle

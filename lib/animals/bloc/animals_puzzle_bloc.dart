@@ -10,8 +10,7 @@ part 'animals_puzzle_state.dart';
 /// {@template animals_puzzle_bloc}
 /// A bloc responsible for starting the Animals puzzle.
 /// {@endtemplate}
-class AnimalsPuzzleBloc
-    extends Bloc<AnimalsPuzzleEvent, AnimalsPuzzleState> {
+class AnimalsPuzzleBloc extends Bloc<AnimalsPuzzleEvent, AnimalsPuzzleState> {
   /// {@macro animals_puzzle_bloc}
   AnimalsPuzzleBloc({
     required this.secondsToBegin,

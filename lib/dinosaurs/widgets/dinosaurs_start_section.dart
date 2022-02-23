@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/bloc/dinosaurs_puzzle_bloc.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/dinosaurs.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/widgets/dinosaurs_puzzle_action_button.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/widgets/dinosaurs_timer.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/bloc/dinosaurs_puzzle_bloc.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/widgets/dinosaurs_puzzle_action_button.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/widgets/dinosaurs_timer.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 
 /// {@template dinosaurs_start_section}

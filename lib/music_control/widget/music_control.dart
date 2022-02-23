@@ -11,23 +11,41 @@ class MusicControl extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final selectedMusic = context.select((MusicControlBloc bloc) => bloc.state.music);
+    final selectedMusic =
+        context.select((MusicControlBloc bloc) => bloc.state.music);
 
     final menuItems = <DropdownMenuItem<String>>[
       const DropdownMenuItem(value: 'None', child: Text('None')),
-      const DropdownMenuItem(value: 'assets/audio/music/acousticbreeze.mp3', child: Text('Acoustic Breeze')),
-      const DropdownMenuItem(value: 'assets/audio/music/adventure.mp3', child: Text('Adventure')),
-      const DropdownMenuItem(value: 'assets/audio/music/energy.mp3', child: Text('Energy')),
-      const DropdownMenuItem(value: 'assets/audio/music/enigmatic.mp3', child: Text('Enigmatic')),
-      const DropdownMenuItem(value: 'assets/audio/music/funkyelement.mp3', child: Text('Funky Element')),
-      const DropdownMenuItem(value: 'assets/audio/music/hey.mp3', child: Text('Hey')),
-      const DropdownMenuItem(value: 'assets/audio/music/inspire.mp3', child: Text('Inspire')),
-      const DropdownMenuItem(value: 'assets/audio/music/littleidea.mp3', child: Text('Little Idea')),
-      const DropdownMenuItem(value: 'assets/audio/music/relaxing.mp3', child: Text('Relaxing')),
-      const DropdownMenuItem(value: 'assets/audio/music/smile.mp3', child: Text('Smile')),
-      const DropdownMenuItem(value: 'assets/audio/music/sunny.mp3', child: Text('Sunny')),
-      const DropdownMenuItem(value: 'assets/audio/music/tenderness.mp3', child: Text('Tenderness')),
-      const DropdownMenuItem(value: 'assets/audio/music/ukulele.mp3', child: Text('Ukulele')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/acousticbreeze.mp3',
+          child: Text('Acoustic Breeze')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/adventure.mp3', child: Text('Adventure')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/energy.mp3', child: Text('Energy')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/enigmatic.mp3', child: Text('Enigmatic')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/funkyelement.mp3',
+          child: Text('Funky Element')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/hey.mp3', child: Text('Hey')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/inspire.mp3', child: Text('Inspire')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/littleidea.mp3',
+          child: Text('Little Idea')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/relaxing.mp3', child: Text('Relaxing')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/smile.mp3', child: Text('Smile')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/sunny.mp3', child: Text('Sunny')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/tenderness.mp3',
+          child: Text('Tenderness')),
+      const DropdownMenuItem(
+          value: 'assets/audio/music/ukulele.mp3', child: Text('Ukulele')),
     ];
 
     return MouseRegion(

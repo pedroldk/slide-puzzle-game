@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/zen/zen.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/zen/widgets/zen_score.dart';
 import 'package:very_good_slide_puzzle/zen/widgets/zen_share_dialog_animated_builder.dart';
 import 'package:very_good_slide_puzzle/zen/widgets/zen_share_your_score.dart';
+import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_share_dialog}
 /// Displays a Zen share dialog with a score of the completed puzzle

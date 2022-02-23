@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
-import 'package:very_good_slide_puzzle/zen/zen.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
+import 'package:very_good_slide_puzzle/theme/themes/themes.dart';
 import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
 import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
-import 'package:very_good_slide_puzzle/theme/themes/themes.dart';
+import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 abstract class _TileSize {
   static double small = 75;
@@ -92,8 +92,7 @@ class ZenPuzzleTileState extends State<ZenPuzzleTile>
   Widget build(BuildContext context) {
     final size = widget.state.puzzle.getDimension();
     final theme = context.select((ZenThemeBloc bloc) => bloc.state.theme);
-    final status =
-        context.select((ZenPuzzleBloc bloc) => bloc.state.status);
+    final status = context.select((ZenPuzzleBloc bloc) => bloc.state.status);
     final hasStarted = status == ZenPuzzleStatus.started;
     final puzzleIncomplete =
         context.select((PuzzleBloc bloc) => bloc.state.puzzleStatus) ==

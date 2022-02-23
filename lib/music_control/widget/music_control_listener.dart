@@ -8,11 +8,8 @@ import 'package:very_good_slide_puzzle/music_control/bloc/music_control_bloc.dar
 /// {@endtemplate}
 class MusicControlListener extends StatefulWidget {
   /// {@macro music_control_listener}
-  MusicControlListener({
-    Key? key,
-    this.audioPlayer,
-    required this.child
-  }) : super(key: key);
+  MusicControlListener({Key? key, this.audioPlayer, required this.child})
+      : super(key: key);
 
   /// The audio player to be muted/unmuted when the audio status changes.
   AudioPlayer? audioPlayer;
@@ -40,8 +37,7 @@ class _MusicControlListenerState extends State<MusicControlListener> {
   @override
   Widget build(BuildContext context) {
     return BlocListener<MusicControlBloc, MusicControlState>(
-      listener: (context, state) =>
-          updateMusicPlayer(music: state.music),
+      listener: (context, state) => updateMusicPlayer(music: state.music),
       child: widget.child,
     );
   }

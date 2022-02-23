@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/zen/zen.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
-import 'package:very_good_slide_puzzle/zen/layout/zen_puzzle_layout_delegate.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
+import 'package:very_good_slide_puzzle/zen/layout/zen_puzzle_layout_delegate.dart';
+import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_theme}
 /// The zen puzzle theme.
@@ -18,8 +18,7 @@ abstract class ZenTheme extends PuzzleTheme {
   String get name => 'Zen';
 
   @override
-  String get audioControlOnAsset =>
-      'assets/images/audio_control/space_on.png';
+  String get audioControlOnAsset => 'assets/images/audio_control/space_on.png';
 
   @override
   bool get hasTimer => true;
@@ -46,8 +45,7 @@ abstract class ZenTheme extends PuzzleTheme {
   Color get menuUnderlineColor => PuzzleColors.white;
 
   @override
-  PuzzleLayoutDelegate get layoutDelegate =>
-      const ZenPuzzleLayoutDelegate();
+  PuzzleLayoutDelegate get layoutDelegate => const ZenPuzzleLayoutDelegate();
 
   /// The semantics label of this theme.
   String semanticsLabel(BuildContext context);

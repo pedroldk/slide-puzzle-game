@@ -31,10 +31,12 @@ class ConstellationsFirstSpaceTheme extends SpaceTheme {
   Color get countdownColor => PuzzleColors.blue50;
 
   @override
-  String get themeAsset => 'assets/images/space/gallery/constellations_first.png';
+  String get themeAsset =>
+      'assets/images/space/gallery/constellations_first.png';
 
   @override
-  String get successThemeAsset => 'assets/images/space/gallery/constellations_first.png';
+  String get successThemeAsset =>
+      'assets/images/space/gallery/constellations_first.png';
 
   @override
   String get audioControlOffAsset =>

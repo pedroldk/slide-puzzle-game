@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/animals/animals.dart';
 import 'package:very_good_slide_puzzle/animals/themes/cat_animals_theme.dart';
 import 'package:very_good_slide_puzzle/animals/themes/guinea_animals_theme.dart';
@@ -579,8 +578,9 @@ class _PuzzleTile extends StatelessWidget {
 @visibleForTesting
 class PuzzleMenu extends StatelessWidget {
   /// {@macro puzzle_menu}
-  const PuzzleMenu({Key? key, MusicPlayerFactory? musicPlayerFactory}) :
-        _musicPlayerFactory = musicPlayerFactory ?? getMusicPlayer, super(key: key);
+  const PuzzleMenu({Key? key, MusicPlayerFactory? musicPlayerFactory})
+      : _musicPlayerFactory = musicPlayerFactory ?? getMusicPlayer,
+        super(key: key);
 
   final MusicPlayerFactory _musicPlayerFactory;
 
@@ -588,41 +588,47 @@ class PuzzleMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     final themes = context.select((ThemeBloc bloc) => bloc.state.themes);
 
-    return SingleChildScrollView(child: Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        ...List.generate(
-          themes.length,
-          (index) => PuzzleMenuItem(
-            theme: themes[index],
-            themeIndex: index,
+    return SingleChildScrollView(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ...List.generate(
+            themes.length,
+            (index) => PuzzleMenuItem(
+              theme: themes[index],
+              themeIndex: index,
+            ),
           ),
-        ),
-        ResponsiveLayoutBuilder(
-          small: (_, child) => const SizedBox(),
-          medium: (_, child) => child!,
-          large: (_, child) => child!,
-          child: (currentSize) {
-            return SingleChildScrollView(child: Row(
-              children: [
-                const Gap(44),
-                AudioControl(
-                  key: audioControlKey,
+          ResponsiveLayoutBuilder(
+            small: (_, child) => const SizedBox(),
+            medium: (_, child) => child!,
+            large: (_, child) => child!,
+            child: (currentSize) {
+              return SingleChildScrollView(
+                child: Row(
+                  children: [
+                    const Gap(44),
+                    AudioControl(
+                      key: audioControlKey,
+                    ),
+                    MusicControl(
+                      key: musicControlKey,
+                    ),
+                    MusicControlListener(
+                      key: const Key('music_player'),
+                      audioPlayer: _musicPlayerFactory().audioPlayer,
+                      child: const Tooltip(
+                        message: '',
+                      ),
+                    ),
+                  ],
                 ),
-                MusicControl(
-                  key: musicControlKey,
-                ),
-                MusicControlListener(
-                  key: const Key('music_player'),
-                  audioPlayer: _musicPlayerFactory().audioPlayer,
-                  child: const Tooltip(
-                  message: '',),),
-              ],
-            ),);
-          },
-        ),
-      ],
-    ),);
+              );
+            },
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -650,7 +656,8 @@ class PuzzleMenuItem extends StatelessWidget {
     final isCurrentTheme = theme == currentTheme;
 
     return ResponsiveLayoutBuilder(
-      small: (_, child) => SingleChildScrollView(child: Column(
+      small: (_, child) => SingleChildScrollView(
+          child: Column(
         children: [
           Container(
             width: 80,

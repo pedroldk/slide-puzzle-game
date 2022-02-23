@@ -34,7 +34,8 @@ class GalaxyFirstSpaceTheme extends SpaceTheme {
   String get themeAsset => 'assets/images/space/gallery/galaxy_first.png';
 
   @override
-  String get successThemeAsset => 'assets/images/space/gallery/galaxy_first.png';
+  String get successThemeAsset =>
+      'assets/images/space/gallery/galaxy_first.png';
 
   @override
   String get audioControlOffAsset =>

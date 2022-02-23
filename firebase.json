@@ -4,6 +4,10 @@
     "site": "slide-puzzle-dev-34815",
     "cleanUrls": true,
     "trailingSlash": false,
-    "ignore": [".firebase", "firebase.json", "__/**"]
+    "ignore": [
+      ".firebase",
+      "firebase.json",
+      "__/**"
+    ]
   }
 }

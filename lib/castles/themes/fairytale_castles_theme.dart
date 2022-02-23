@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/castles/castles.dart';
 import 'package:very_good_slide_puzzle/castles/themes/castles_theme.dart';
+import 'package:very_good_slide_puzzle/colors/colors.dart';
+import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 
 /// {@template galaxy_castles_theme}
 /// The galaxy castles puzzle theme.

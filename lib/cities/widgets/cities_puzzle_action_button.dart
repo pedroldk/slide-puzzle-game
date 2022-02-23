@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
+import 'package:very_good_slide_puzzle/cities/bloc/cities_puzzle_bloc.dart';
+import 'package:very_good_slide_puzzle/cities/bloc/cities_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/cities/cities.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
-import 'package:very_good_slide_puzzle/cities/bloc/cities_puzzle_bloc.dart';
-import 'package:very_good_slide_puzzle/cities/bloc/cities_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 
@@ -30,8 +30,7 @@ class CitiesPuzzleActionButton extends StatefulWidget {
       _CitiesPuzzleActionButtonState();
 }
 
-class _CitiesPuzzleActionButtonState
-    extends State<CitiesPuzzleActionButton> {
+class _CitiesPuzzleActionButtonState extends State<CitiesPuzzleActionButton> {
   late final AudioPlayer _audioPlayer;
 
   @override
@@ -51,8 +50,7 @@ class _CitiesPuzzleActionButtonState
   Widget build(BuildContext context) {
     final theme = context.select((CitiesThemeBloc bloc) => bloc.state.theme);
 
-    final status =
-        context.select((CitiesPuzzleBloc bloc) => bloc.state.status);
+    final status = context.select((CitiesPuzzleBloc bloc) => bloc.state.status);
     final isLoading = status == CitiesPuzzleStatus.loading;
     final isStarted = status == CitiesPuzzleStatus.started;
 

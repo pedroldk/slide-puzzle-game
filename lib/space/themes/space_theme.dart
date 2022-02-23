@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/space/space.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
 import 'package:very_good_slide_puzzle/space/layout/space_puzzle_layout_delegate.dart';
+import 'package:very_good_slide_puzzle/space/space.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 
 /// {@template space_theme}
@@ -18,8 +18,7 @@ abstract class SpaceTheme extends PuzzleTheme {
   String get name => 'Space';
 
   @override
-  String get audioControlOnAsset =>
-      'assets/images/audio_control/space_on.png';
+  String get audioControlOnAsset => 'assets/images/audio_control/space_on.png';
 
   @override
   bool get hasTimer => true;
@@ -46,8 +45,7 @@ abstract class SpaceTheme extends PuzzleTheme {
   Color get menuUnderlineColor => PuzzleColors.white;
 
   @override
-  PuzzleLayoutDelegate get layoutDelegate =>
-      const SpacePuzzleLayoutDelegate();
+  PuzzleLayoutDelegate get layoutDelegate => const SpacePuzzleLayoutDelegate();
 
   /// The semantics label of this theme.
   String semanticsLabel(BuildContext context);

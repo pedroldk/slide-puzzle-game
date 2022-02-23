@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
-import 'package:very_good_slide_puzzle/zen/zen.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
+import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
+import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_countdown}
 /// Displays the countdown before the puzzle is started.
@@ -75,8 +75,7 @@ class _ZenCountdownState extends State<ZenCountdown> {
         child: ResponsiveLayoutBuilder(
           small: (_, __) => const SizedBox(),
           medium: (_, __) => const SizedBox(),
-          large: (_, __) =>
-              BlocBuilder<ZenPuzzleBloc, ZenPuzzleState>(
+          large: (_, __) => BlocBuilder<ZenPuzzleBloc, ZenPuzzleState>(
             builder: (context, state) {
               if (!state.isCountdownRunning || state.secondsToBegin > 3) {
                 return const SizedBox();
@@ -117,8 +116,7 @@ class ZenCountdownSecondsToBegin extends StatefulWidget {
       _ZenCountdownSecondsToBeginState();
 }
 
-class _ZenCountdownSecondsToBeginState
-    extends State<ZenCountdownSecondsToBegin>
+class _ZenCountdownSecondsToBeginState extends State<ZenCountdownSecondsToBegin>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
   late Animation<double> inOpacity;

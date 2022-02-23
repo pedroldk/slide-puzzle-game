@@ -10,7 +10,8 @@ part 'dinosaurs_theme_state.dart';
 /// {@template dinosaurs_theme_bloc}
 /// Bloc responsible for the currently selected [DinosaursTheme].
 /// {@endtemplate}
-class DinosaursThemeBloc extends Bloc<DinosaursThemeEvent, DinosaursThemeState> {
+class DinosaursThemeBloc
+    extends Bloc<DinosaursThemeEvent, DinosaursThemeState> {
   /// {@macro dinosaurs_theme_bloc}
   DinosaursThemeBloc({required List<DinosaursTheme> themes})
       : super(DinosaursThemeState(themes: themes)) {

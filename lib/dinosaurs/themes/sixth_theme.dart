@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/dinosaurs.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/themes/dinosaurs_theme.dart';
+import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 
 /// {@template galaxy_dinosaurs_theme}
 /// The galaxy dinosaurs puzzle theme.
@@ -34,7 +34,8 @@ class SixthDinosaursTheme extends DinosaursTheme {
   String get themeAsset => 'assets/images/dinosaurs/gallery/dinosaur_sixth.png';
 
   @override
-  String get successThemeAsset => 'assets/images/dinosaurs/gallery/dinosaur_sixth.png';
+  String get successThemeAsset =>
+      'assets/images/dinosaurs/gallery/dinosaur_sixth.png';
 
   @override
   String get audioControlOffAsset =>

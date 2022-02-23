@@ -34,7 +34,8 @@ class GalaxyThirdSpaceTheme extends SpaceTheme {
   String get themeAsset => 'assets/images/space/gallery/galaxy_third.png';
 
   @override
-  String get successThemeAsset => 'assets/images/space/gallery/galaxy_third.png';
+  String get successThemeAsset =>
+      'assets/images/space/gallery/galaxy_third.png';
 
   @override
   String get audioControlOffAsset =>

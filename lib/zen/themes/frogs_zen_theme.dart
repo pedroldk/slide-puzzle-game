@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
-import 'package:very_good_slide_puzzle/zen/zen.dart';
 import 'package:very_good_slide_puzzle/zen/themes/zen_theme.dart';
+import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template galaxy_zen_theme}
 /// The galaxy zen puzzle theme.

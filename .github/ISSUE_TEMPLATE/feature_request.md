@@ -1,7 +1,5 @@
 ---
-name: Feature Request
-about: A new feature to be added to the project
-title: 'feat: '
+name: Feature Request about: A new feature to be added to the project title: 'feat: '
 labels: feature
 ---
 

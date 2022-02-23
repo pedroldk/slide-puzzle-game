@@ -106,11 +106,13 @@ class _AppState extends State<App> {
         context,
       );
       precacheImage(
-        Image.asset('assets/images/space/gallery/constellations_first.png').image,
+        Image.asset('assets/images/space/gallery/constellations_first.png')
+            .image,
         context,
       );
       precacheImage(
-        Image.asset('assets/images/space/success/constellations_first.png').image,
+        Image.asset('assets/images/space/success/constellations_first.png')
+            .image,
         context,
       );
       precacheImage(
@@ -392,7 +394,8 @@ class _AppState extends State<App> {
 
   void precacheSpaceTheme(String themeFolder, int i) {
     precacheImage(
-      Image.asset('assets/images/$themeFolder/constellations_first/$i.png').image,
+      Image.asset('assets/images/$themeFolder/constellations_first/$i.png')
+          .image,
       context,
     );
     precacheImage(

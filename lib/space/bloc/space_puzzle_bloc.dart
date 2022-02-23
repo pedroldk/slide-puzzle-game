@@ -10,8 +10,7 @@ part 'space_puzzle_state.dart';
 /// {@template space_puzzle_bloc}
 /// A bloc responsible for starting the Space puzzle.
 /// {@endtemplate}
-class SpacePuzzleBloc
-    extends Bloc<SpacePuzzleEvent, SpacePuzzleState> {
+class SpacePuzzleBloc extends Bloc<SpacePuzzleEvent, SpacePuzzleState> {
   /// {@macro space_puzzle_bloc}
   SpacePuzzleBloc({
     required this.secondsToBegin,

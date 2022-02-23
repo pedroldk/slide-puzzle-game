@@ -3,11 +3,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
-import 'package:very_good_slide_puzzle/space/space.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/space/bloc/space_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/space/space.dart';
 import 'package:very_good_slide_puzzle/space/widgets/space_share_dialog.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 

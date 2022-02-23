@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/cities/cities.dart';
 import 'package:very_good_slide_puzzle/cities/themes/cities_theme.dart';
+import 'package:very_good_slide_puzzle/colors/colors.dart';
+import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 
 /// {@template galaxy_cities_theme}
 /// The galaxy cities puzzle theme.

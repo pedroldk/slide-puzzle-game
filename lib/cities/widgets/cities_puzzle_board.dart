@@ -3,12 +3,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
+import 'package:very_good_slide_puzzle/cities/bloc/cities_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/cities/cities.dart';
+import 'package:very_good_slide_puzzle/cities/widgets/cities_share_dialog.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
-import 'package:very_good_slide_puzzle/cities/bloc/cities_theme_bloc.dart';
-import 'package:very_good_slide_puzzle/cities/widgets/cities_share_dialog.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 
 abstract class _BoardSize {

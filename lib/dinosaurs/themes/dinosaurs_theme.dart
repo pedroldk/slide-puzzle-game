@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/dinosaurs.dart';
+import 'package:very_good_slide_puzzle/dinosaurs/layout/dinosaurs_puzzle_layout_delegate.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/layout/dinosaurs_puzzle_layout_delegate.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 
 /// {@template dinosaurs_theme}
@@ -18,8 +18,7 @@ abstract class DinosaursTheme extends PuzzleTheme {
   String get name => 'Dinosaurs';
 
   @override
-  String get audioControlOnAsset =>
-      'assets/images/audio_control/space_on.png';
+  String get audioControlOnAsset => 'assets/images/audio_control/space_on.png';
 
   @override
   bool get hasTimer => true;

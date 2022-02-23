@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
-import 'package:very_good_slide_puzzle/zen/zen.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
+import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
+import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
+import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_puzzle_action_button}
 /// Displays the action button to start or shuffle the puzzle
@@ -26,12 +26,10 @@ class ZenPuzzleActionButton extends StatefulWidget {
   final AudioPlayerFactory _audioPlayerFactory;
 
   @override
-  State<ZenPuzzleActionButton> createState() =>
-      _ZenPuzzleActionButtonState();
+  State<ZenPuzzleActionButton> createState() => _ZenPuzzleActionButtonState();
 }
 
-class _ZenPuzzleActionButtonState
-    extends State<ZenPuzzleActionButton> {
+class _ZenPuzzleActionButtonState extends State<ZenPuzzleActionButton> {
   late final AudioPlayer _audioPlayer;
 
   @override
@@ -51,8 +49,7 @@ class _ZenPuzzleActionButtonState
   Widget build(BuildContext context) {
     final theme = context.select((ZenThemeBloc bloc) => bloc.state.theme);
 
-    final status =
-        context.select((ZenPuzzleBloc bloc) => bloc.state.status);
+    final status = context.select((ZenPuzzleBloc bloc) => bloc.state.status);
     final isLoading = status == ZenPuzzleStatus.loading;
     final isStarted = status == ZenPuzzleStatus.started;
 
