@@ -1,4 +1,4 @@
-# Slide Puzzle
+# Slide It Music Puzzle Game
 
 ![Photo Booth Header][logo]
 
@@ -12,6 +12,8 @@ A slide puzzle built for [Flutter Challenge](https://flutterhack.devpost.com/).
 
 *Created using [Very Good CLI][very_good_cli_link].*
 
+Modifications by Pedro Coelho and Music by https://www.bensound.com/
+
 ---
 
 ## Getting Started 🚀
@@ -21,6 +23,8 @@ To run the project either use the launch configuration in VSCode/Android Studio 
 ```sh
 $ flutter run -d chrome
 ```
+
+You can also run as Windows as a target altough it still has a couple of bugs.
 
 ---
 
