@@ -1,7 +1,7 @@
 {
   "hosting": {
     "public": "build/web",
-    "site": "slide-puzzle-dev-34815",
+    "site": "slide-puzzle-game-8d8c4",
     "cleanUrls": true,
     "trailingSlash": false,
     "ignore": [

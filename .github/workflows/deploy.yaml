@@ -34,6 +34,6 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_HOSTING_DEV }}"
           projectId: slide-puzzle-dev
-          target: slide-puzzle-dev-34815
+          target: slide-puzzle-game-8d8c4
           expires: 30d
           channelId: live
