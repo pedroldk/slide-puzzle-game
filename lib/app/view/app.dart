@@ -8,6 +8,7 @@
 // ignore_for_file: public_member_api_docs, avoid_print
 
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -215,9 +216,12 @@ class _AppState extends State<App> {
         );
       }
 
-      for (final audioAsset in audioAssets) {
-        prefetchToMemory(audioAsset);
+      if (!Platform.isWindows) {
+        for (final audioAsset in audioAssets) {
+          prefetchToMemory(audioAsset);
+        }
       }
+      
     });
   }
 

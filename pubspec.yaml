@@ -23,6 +23,12 @@ dependencies:
   just_audio_libwinmedia: ^0.0.4
   universal_platform: ^1.0.0+1
   url_launcher: ^6.0.17
+  dart_code_metrics: ^4.12.0
+  rive: ^0.8.1
+  window_size:
+    git:
+      url: git://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
 
 dev_dependencies:
   bloc_test: ^9.0.1
