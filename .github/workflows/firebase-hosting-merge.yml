@@ -7,7 +7,7 @@ name: Deploy to Firebase Hosting on merge
     branches:
       - release
 jobs:
-  build_and_deploy:
+  web:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,14 +26,14 @@ jobs:
       # - name: Format
       #   run: flutter format --set-exit-if-changed lib test
 
-      - name: Analyze
-        run: flutter analyze lib test
+      # - name: Analyze
+      #   run: flutter analyze lib test
 
       # - name: Run tests
       #   run: flutter test --no-pub --coverage --test-randomize-ordering-seed random
 
-      - name: Check Code Coverage
-        uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
+      # - name: Check Code Coverage
+      #   uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -41,7 +41,7 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_SLIDE_PUZZLE_GAME_8D8C4 }}"
           channelId: live
           projectId: slide-puzzle-game-8d8c4
-  build:
+  windows:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
