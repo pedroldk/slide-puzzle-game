@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - release
@@ -34,7 +34,22 @@ jobs:
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SLIDE_PUZZLE_GAME_8D8C4 }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_SLIDE_PUZZLE_GAME_8D8C4 }}"
           channelId: live
           projectId: slide-puzzle-game-8d8c4
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: subosito/flutter-action@v1.5.3
+        with:
+          flutter-version: 2.8.0
+          channel: stable
+
+      - name: Install Dependencies
+        run: flutter packages get
+
+      - name: Build for Windows
+      - run: flutter build windows
