@@ -52,4 +52,4 @@ jobs:
         run: flutter packages get
 
       - name: Build for Windows
-      - run: flutter build windows
+        run: flutter build windows
