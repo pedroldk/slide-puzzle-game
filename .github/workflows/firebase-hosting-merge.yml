@@ -35,12 +35,12 @@ jobs:
       # - name: Check Code Coverage
       #   uses: VeryGoodOpenSource/very_good_coverage@v1.2.0
 
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_SLIDE_PUZZLE_GAME_8D8C4 }}"
-          channelId: live
-          projectId: slide-puzzle-game-8d8c4
+      # - uses: FirebaseExtended/action-hosting-deploy@v0
+      #   with:
+      #     repoToken: "${{ secrets.GITHUB_TOKEN }}"
+      #     firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_SLIDE_PUZZLE_GAME_8D8C4 }}"
+      #     channelId: live
+      #     projectId: slide-puzzle-game-8d8c4
   windows:
     runs-on: windows-latest
     steps:

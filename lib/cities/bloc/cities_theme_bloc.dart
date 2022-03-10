@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:very_good_slide_puzzle/cities/cities.dart';
-import 'package:very_good_slide_puzzle/cities/themes/cities_theme.dart';
 
 part 'cities_theme_event.dart';
 part 'cities_theme_state.dart';

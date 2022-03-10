@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/dinosaurs.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/themes/dinosaurs_theme.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/themes/first_theme.dart';
 
 part 'dinosaurs_theme_event.dart';
 part 'dinosaurs_theme_state.dart';

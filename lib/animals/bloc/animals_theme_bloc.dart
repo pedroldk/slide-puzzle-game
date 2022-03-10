@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:very_good_slide_puzzle/animals/animals.dart';
-import 'package:very_good_slide_puzzle/animals/themes/animals_theme.dart';
 
 part 'animals_theme_event.dart';
 part 'animals_theme_state.dart';

@@ -10,8 +10,6 @@ import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_countdown}

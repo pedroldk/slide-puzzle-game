@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:very_good_slide_puzzle/zen/themes/zen_theme.dart';
 import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 part 'zen_theme_event.dart';

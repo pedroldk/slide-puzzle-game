@@ -12,9 +12,6 @@ import 'package:very_good_slide_puzzle/layout/layout.dart';
 /// {@template castles_theme_picker}
 /// Displays the Castles theme picker to choose between
 /// [CastlesThemeState.themes].
-///
-/// By default allows to choose between [BlueCastlesTheme],
-/// [GreenCastlesTheme] or [YellowCastlesTheme].
 /// {@endtemplate}
 class CastlesThemePicker extends StatefulWidget {
   /// {@macro castles_theme_picker}

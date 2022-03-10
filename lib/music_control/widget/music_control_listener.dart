@@ -4,15 +4,15 @@ import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/music_control/bloc/music_control_bloc.dart';
 
 /// {@template music_control_listener}
-/// Listens to the current audio status and changes [audioPlayer] music accordingly.
+/// Listens to the current audio status and changes [audioPlayer] music.
 /// {@endtemplate}
 class MusicControlListener extends StatefulWidget {
   /// {@macro music_control_listener}
-  MusicControlListener({Key? key, this.audioPlayer, required this.child})
+  const MusicControlListener({Key? key, this.audioPlayer, required this.child})
       : super(key: key);
 
   /// The audio player to be muted/unmuted when the audio status changes.
-  AudioPlayer? audioPlayer;
+  final AudioPlayer? audioPlayer;
 
   /// The widget below this widget in the tree.
   ///

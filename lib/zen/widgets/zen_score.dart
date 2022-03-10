@@ -7,8 +7,6 @@ import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/theme/themes/themes.dart';
 import 'package:very_good_slide_puzzle/theme/widgets/widgets.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
-import 'package:very_good_slide_puzzle/zen/widgets/zen_timer.dart';
 import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_score}

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_slide_puzzle/animals/animals.dart';
-import 'package:very_good_slide_puzzle/animals/bloc/animals_theme_bloc.dart';
-import 'package:very_good_slide_puzzle/animals/widgets/animals_timer.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';

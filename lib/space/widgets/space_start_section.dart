@@ -3,10 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
-import 'package:very_good_slide_puzzle/space/bloc/space_puzzle_bloc.dart';
 import 'package:very_good_slide_puzzle/space/space.dart';
-import 'package:very_good_slide_puzzle/space/widgets/space_puzzle_action_button.dart';
-import 'package:very_good_slide_puzzle/space/widgets/space_timer.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 
 /// {@template space_start_section}

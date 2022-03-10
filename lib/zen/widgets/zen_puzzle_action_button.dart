@@ -9,8 +9,6 @@ import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_puzzle_bloc.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_puzzle_action_button}

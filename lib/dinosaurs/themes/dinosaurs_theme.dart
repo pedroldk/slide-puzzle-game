@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:path/path.dart' as p;
 import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/dinosaurs.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/layout/dinosaurs_puzzle_layout_delegate.dart';

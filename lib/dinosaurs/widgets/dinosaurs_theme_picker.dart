@@ -12,9 +12,6 @@ import 'package:very_good_slide_puzzle/layout/layout.dart';
 /// {@template dinosaurs_theme_picker}
 /// Displays the Dinosaurs theme picker to choose between
 /// [DinosaursThemeState.themes].
-///
-/// By default allows to choose between [BlueDinosaursTheme],
-/// [GreenDinosaursTheme] or [YellowDinosaursTheme].
 /// {@endtemplate}
 class DinosaursThemePicker extends StatefulWidget {
   /// {@macro dinosaurs_theme_picker}

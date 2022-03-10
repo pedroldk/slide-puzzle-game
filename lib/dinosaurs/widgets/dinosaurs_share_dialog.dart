@@ -5,9 +5,6 @@ import 'package:just_audio/just_audio.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/dinosaurs/dinosaurs.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/widgets/dinosaurs_score.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/widgets/dinosaurs_share_dialog_animated_builder.dart';
-import 'package:very_good_slide_puzzle/dinosaurs/widgets/dinosaurs_share_your_score.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 

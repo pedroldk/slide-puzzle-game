@@ -12,9 +12,6 @@ import 'package:very_good_slide_puzzle/layout/layout.dart';
 /// {@template cities_theme_picker}
 /// Displays the Cities theme picker to choose between
 /// [CitiesThemeState.themes].
-///
-/// By default allows to choose between [BlueCitiesTheme],
-/// [GreenCitiesTheme] or [YellowCitiesTheme].
 /// {@endtemplate}
 class CitiesThemePicker extends StatefulWidget {
   /// {@macro cities_theme_picker}

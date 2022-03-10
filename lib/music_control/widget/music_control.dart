@@ -18,34 +18,34 @@ class MusicControl extends StatelessWidget {
       const DropdownMenuItem(value: 'None', child: Text('None')),
       const DropdownMenuItem(
           value: 'assets/audio/music/acousticbreeze.mp3',
-          child: Text('Acoustic Breeze')),
+          child: Text('Acoustic Breeze'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/adventure.mp3', child: Text('Adventure')),
+          value: 'assets/audio/music/adventure.mp3', child: Text('Adventure'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/energy.mp3', child: Text('Energy')),
+          value: 'assets/audio/music/energy.mp3', child: Text('Energy'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/enigmatic.mp3', child: Text('Enigmatic')),
+          value: 'assets/audio/music/enigmatic.mp3', child: Text('Enigmatic'),),
       const DropdownMenuItem(
           value: 'assets/audio/music/funkyelement.mp3',
-          child: Text('Funky Element')),
+          child: Text('Funky Element'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/hey.mp3', child: Text('Hey')),
+          value: 'assets/audio/music/hey.mp3', child: Text('Hey'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/inspire.mp3', child: Text('Inspire')),
+          value: 'assets/audio/music/inspire.mp3', child: Text('Inspire'),),
       const DropdownMenuItem(
           value: 'assets/audio/music/littleidea.mp3',
-          child: Text('Little Idea')),
+          child: Text('Little Idea'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/relaxing.mp3', child: Text('Relaxing')),
+          value: 'assets/audio/music/relaxing.mp3', child: Text('Relaxing'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/smile.mp3', child: Text('Smile')),
+          value: 'assets/audio/music/smile.mp3', child: Text('Smile'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/sunny.mp3', child: Text('Sunny')),
+          value: 'assets/audio/music/sunny.mp3', child: Text('Sunny'),),
       const DropdownMenuItem(
           value: 'assets/audio/music/tenderness.mp3',
-          child: Text('Tenderness')),
+          child: Text('Tenderness'),),
       const DropdownMenuItem(
-          value: 'assets/audio/music/ukulele.mp3', child: Text('Ukulele')),
+          value: 'assets/audio/music/ukulele.mp3', child: Text('Ukulele'),),
     ];
 
     return MouseRegion(

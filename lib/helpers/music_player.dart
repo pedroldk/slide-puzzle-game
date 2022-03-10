@@ -7,14 +7,16 @@ typedef MusicPlayerFactory = ValueGetter<MusicPlayer>;
 /// Gets a new instance of [AudioPlayer].
 MusicPlayer getMusicPlayer() => MusicPlayer();
 
+/// Music player.
 class MusicPlayer {
-  static final MusicPlayer _singleton = MusicPlayer._internal();
-
-  factory MusicPlayer() {
-    return _singleton;
-  }
-
-  AudioPlayer? audioPlayer = AudioPlayer();
+  /// Gets the singleton instance of [MusicPlayer].
+  factory MusicPlayer() => _singleton;
 
   MusicPlayer._internal();
+
+  static final MusicPlayer _singleton = MusicPlayer._internal();
+
+  /// The [AudioPlayer] instance.
+  AudioPlayer? audioPlayer = AudioPlayer();
+
 }

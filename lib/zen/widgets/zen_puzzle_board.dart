@@ -7,8 +7,6 @@ import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
-import 'package:very_good_slide_puzzle/zen/bloc/zen_theme_bloc.dart';
-import 'package:very_good_slide_puzzle/zen/widgets/zen_share_dialog.dart';
 import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 abstract class _BoardSize {

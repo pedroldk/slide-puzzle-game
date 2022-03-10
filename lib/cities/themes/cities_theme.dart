@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:path/path.dart' as p;
 import 'package:very_good_slide_puzzle/cities/cities.dart';
 import 'package:very_good_slide_puzzle/cities/layout/cities_puzzle_layout_delegate.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';

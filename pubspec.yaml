@@ -9,6 +9,7 @@ environment:
 
 dependencies:
   bloc: ^8.0.1
+  dart_code_metrics: ^4.12.0
   equatable: ^2.0.3
   fake_async: ^1.2.0
   flutter:
@@ -21,10 +22,9 @@ dependencies:
   intl: ^0.17.0
   just_audio: ^0.9.18
   just_audio_libwinmedia: ^0.0.4
+  rive: ^0.8.1
   universal_platform: ^1.0.0+1
   url_launcher: ^6.0.17
-  dart_code_metrics: ^4.12.0
-  rive: ^0.8.1
   window_size:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git

@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:very_good_slide_puzzle/space/space.dart';
-import 'package:very_good_slide_puzzle/space/themes/galaxy_first_space_theme.dart';
-import 'package:very_good_slide_puzzle/space/themes/space_theme.dart';
 
 part 'space_theme_event.dart';
 part 'space_theme_state.dart';

@@ -8,8 +8,6 @@ import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
-import 'package:very_good_slide_puzzle/space/bloc/space_puzzle_bloc.dart';
-import 'package:very_good_slide_puzzle/space/bloc/space_theme_bloc.dart';
 import 'package:very_good_slide_puzzle/space/space.dart';
 import 'package:very_good_slide_puzzle/timer/timer.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';

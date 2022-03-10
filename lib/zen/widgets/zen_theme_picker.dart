@@ -12,9 +12,6 @@ import 'package:very_good_slide_puzzle/zen/zen.dart';
 /// {@template zen_theme_picker}
 /// Displays the Zen theme picker to choose between
 /// [ZenThemeState.themes].
-///
-/// By default allows to choose between [BlueZenTheme],
-/// [GreenZenTheme] or [YellowZenTheme].
 /// {@endtemplate}
 class ZenThemePicker extends StatefulWidget {
   /// {@macro zen_theme_picker}

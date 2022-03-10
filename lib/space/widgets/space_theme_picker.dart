@@ -12,9 +12,6 @@ import 'package:very_good_slide_puzzle/space/space.dart';
 /// {@template space_theme_picker}
 /// Displays the Space theme picker to choose between
 /// [SpaceThemeState.themes].
-///
-/// By default allows to choose between [BlueSpaceTheme],
-/// [GreenSpaceTheme] or [YellowSpaceTheme].
 /// {@endtemplate}
 class SpaceThemePicker extends StatefulWidget {
   /// {@macro space_theme_picker}

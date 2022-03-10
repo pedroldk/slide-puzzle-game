@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:very_good_slide_puzzle/castles/bloc/castles_puzzle_bloc.dart';
 import 'package:very_good_slide_puzzle/castles/castles.dart';
-import 'package:very_good_slide_puzzle/castles/widgets/castles_puzzle_action_button.dart';
-import 'package:very_good_slide_puzzle/castles/widgets/castles_timer.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';

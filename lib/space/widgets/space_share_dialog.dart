@@ -7,9 +7,6 @@ import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/helpers/helpers.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/space/space.dart';
-import 'package:very_good_slide_puzzle/space/widgets/space_score.dart';
-import 'package:very_good_slide_puzzle/space/widgets/space_share_dialog_animated_builder.dart';
-import 'package:very_good_slide_puzzle/space/widgets/space_share_your_score.dart';
 
 /// {@template space_share_dialog}
 /// Displays a Space share dialog with a score of the completed puzzle

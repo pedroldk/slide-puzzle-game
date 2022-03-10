@@ -12,9 +12,6 @@ import 'package:very_good_slide_puzzle/layout/layout.dart';
 /// {@template animals_theme_picker}
 /// Displays the Animals theme picker to choose between
 /// [AnimalsThemeState.themes].
-///
-/// By default allows to choose between [BlueAnimalsTheme],
-/// [GreenAnimalsTheme] or [YellowAnimalsTheme].
 /// {@endtemplate}
 class AnimalsThemePicker extends StatefulWidget {
   /// {@macro animals_theme_picker}

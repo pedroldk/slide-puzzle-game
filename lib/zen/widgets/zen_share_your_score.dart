@@ -4,8 +4,6 @@ import 'package:very_good_slide_puzzle/colors/colors.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
-import 'package:very_good_slide_puzzle/zen/widgets/zen_share_button.dart';
-import 'package:very_good_slide_puzzle/zen/widgets/zen_share_dialog_animated_builder.dart';
 import 'package:very_good_slide_puzzle/zen/zen.dart';
 
 /// {@template zen_share_your_score}
