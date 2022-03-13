@@ -8,9 +8,9 @@
 
 A slide puzzle built for [Flutter Challenge](https://flutterhack.devpost.com/).
 
-*Built by [Very Good Ventures][very_good_ventures_link] in partnership with Google.*
+_Built by [Very Good Ventures][very_good_ventures_link] in partnership with Google._
 
-*Created using [Very Good CLI][very_good_cli_link].*
+_Created using [Very Good CLI][very_good_cli_link]._
 
 Modifications by Pedro Coelho and Music by https://www.bensound.com/
 
@@ -24,7 +24,7 @@ To run the project either use the launch configuration in VSCode/Android Studio 
 $ flutter run -d chrome
 ```
 
-You can also run as Windows as a target altough it still has a couple of bugs.
+You can also run as Windows as a target altough the audio/music package still gives some problems.
 
 ---
 
@@ -149,21 +149,12 @@ Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info
 ```
 
 [coverage_badge]: coverage_badge.svg
-
 [flutter_localizations_link]: https://api.flutter.dev/flutter/flutter_localizations/flutter_localizations-library.html
-
 [internationalization_link]: https://flutter.dev/docs/development/accessibility-and-localization/internationalization
-
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
-
 [license_link]: https://opensource.org/licenses/MIT
-
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
-
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
-
 [very_good_cli_link]: https://github.com/VeryGoodOpenSource/very_good_cli
-
 [very_good_ventures_link]: https://verygood.ventures/
-
 [logo]: art/header.png
